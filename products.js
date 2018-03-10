@@ -105,3 +105,4 @@ const stringify = function (agg, el, i, arr) {
     totalPrice: agg.totalPrice + el.price
   }
 }
+products.reduce(stringify, {string: '', totalPrice: 0})

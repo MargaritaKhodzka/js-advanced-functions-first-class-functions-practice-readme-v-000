@@ -11,6 +11,14 @@ const newTaxFunction = function (countryName, taxRate, ...exemptItems) {
   }
 }
 
+const franceTax = newTaxFunction('France', 0.15, 'wine', 'macaron', 'baguette', 'croissant')
+const canadaTax = newTaxFunction('Canada', 0.125, 'maple syrup', 'poutine', 'kindness')
+const mexicoTax = newTaxFunction('Mexico', 0.05, 'queso', 'futbol', 'tequila', 'avocado')
+
+canadaTax('poutine', 599)
+canadaTax('futbol', 1999)
+mexicoTax('Big Mac', 199)
+franceTax('macaron', 149)
 
 // const franceTax = function (item, priceInCents) {
 //   const formattedPrice = '$' + (priceInCents / 100).toFixed(2)
